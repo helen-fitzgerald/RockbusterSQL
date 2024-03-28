@@ -1,0 +1,33 @@
+# Calculating descriptive statistics for the film table - numeric columns
+
+SELECT MIN(rental_duration) AS min_rental_duration,
+      MAX(rental_duration) AS max_rental_duration,
+      AVG(rental_duration) AS avg_rental_duration,
+      MIN(rental_rate) AS min_rental_rate,
+      MAX(rental_rate) AS max_rental_rate,
+      AVG(rental_rate) AS avg_rental_rate,
+      MIN(length) AS min_length,
+      MAX(length) AS max_length,
+      AVG(length) AS avg_length,
+      MIN(replacement_cost) AS min_replacement_cost,
+      MAX(replacement_cost) AS max_replacement_cost,
+      AVG(replacement_cost) AS avg_replacement_cost
+FROM film
+
+# Calculating descriptive statistics for the film table - non-numeric columns
+SELECT
+MODE() WIHTIN GROUP (ORDER BY film_id) AS film_id_modal_value,
+MODE() WIHTIN GROUP (ORDER BY title) AS title_modal_value,
+MODE() WIHTIN GROUP (ORDER BY description) AS description_modal_value,
+MODE() WIHTIN GROUP (ORDER BY release_year) AS release_year_modal_value,
+MODE() WIHTIN GROUP (ORDER BY rating) AS rating_modal_value,
+MODE() WIHTIN GROUP (ORDER BY last_update) AS last_update_modal_value,
+MODE() WIHTIN GROUP (ORDER BY special_features) AS special_features_modal_value,
+MODE() WIHTIN GROUP (ORDER BY fulltext) AS fulltext_modal_value
+FROM film
+
+
+
+
+
+
