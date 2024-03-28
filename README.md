@@ -14,11 +14,9 @@ management system (RDBMS). Then, you’ll use SQL to analyze the data and answer
 ad-hoc business questions that other departments may have.
 
 ## Project Contents
-1. Project Management - includes full project brief.
-2. Data - includes original and cleaned data.
-3. Scripts - includes complete code for data wrangling, visualisations etc.
-4. Analysis - includes raw visualisation files. 
-5. Sent to Client - includes final Excel report. 
+1. Scripts
+2. Presentation
+3. Data Dictionary
 
 ## Data Set
 [Available here](http://www.postgresqltutorial.com/wp-content/uploads/2019/05/dvdrental.zip)
